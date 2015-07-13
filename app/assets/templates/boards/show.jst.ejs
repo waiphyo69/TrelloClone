@@ -1,5 +1,9 @@
 <h3> Details for this board </h3>
 Title: <%= board.escape('title') %>
-<ul class = "lists">
+<br>
+<h4> All the Lists <h4>
+<ul class = "lists group">
 </ul>
 <a href="#">Back to All Boards<a>
+<br>
+<a href=<%="/#/boards/"+board.escape('id')+"/lists/new"%>>Make a new List for this Board</a>

@@ -1,4 +1,4 @@
-TrelloClone.Views.newBoard = Backbone.View.extend({
+TrelloClone.Views.NewBoard = Backbone.View.extend({
 	template: JST["boards/new"],
 
 	tagName: "form",
@@ -19,6 +19,7 @@ TrelloClone.Views.newBoard = Backbone.View.extend({
 
 		newBoard.save({}, {
 			success: function () {
+				event.preventDefault();
 				TrelloClone.boards.add(newBoard);
 				Backbone.history.navigate("#/boards/"+newBoard.escape('id'), { trigger: true });
 			}

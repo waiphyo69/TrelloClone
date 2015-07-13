@@ -16,3 +16,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+li.listitem{
+  color: green;
+  float: left;
+  padding: 20px;
+  border: 1px solid red;
+  height: 200px;
+  margin: 20px;
+}
+
+li.carditem{
+  color: red;
+  position: relative;
+  right: 40px;
+  border: 1px solid blue;
+}
+
+ul.boards li{
+  color: green;
+  float: left;
+  padding: 20px;
+  border: 1px solid red;
+  height: 200px;
+}
